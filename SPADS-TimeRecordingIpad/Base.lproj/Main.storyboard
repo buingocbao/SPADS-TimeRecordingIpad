@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C40a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Wallpaper-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="WallpaperViewController" customModule="SPADS_TimeRecordingIpad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNt-DQ-Nw1">
+                                <rect key="frame" x="103" y="391" width="436" height="152"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HNt-DQ-Nw1" secondAttribute="bottom" id="NLo-iO-fgI"/>
+                            <constraint firstAttribute="trailing" secondItem="HNt-DQ-Nw1" secondAttribute="trailing" id="ecW-F9-rRg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Wallpaper" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="lbTime" destination="HNt-DQ-Nw1" id="Fer-Bc-3e5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Sound-->
+        <scene sceneID="WK4-J1-lec">
+            <objects>
+                <viewController id="tJd-4x-eLC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ESJ-wp-tUd"/>
+                        <viewControllerLayoutGuide type="bottom" id="L35-Sy-t3L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xnr-BN-oX5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sound" id="N5n-S7-AVA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a2u-Dx-KuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="815"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="LoginViewController" customModule="SPADS_TimeRecordingIpad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IDg-D8-MeX" customClass="MKTextField" customModule="SPADS_TimeRecordingIpad" customModuleProvider="target">
+                                <rect key="frame" x="172" y="201" width="256" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="2R6-Fz-0Jd"/>
+                                    <constraint firstAttribute="height" constant="50" id="L1b-zK-Wsc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bdQ-gt-Qy8" customClass="MKTextField" customModule="SPADS_TimeRecordingIpad" customModuleProvider="target">
+                                <rect key="frame" x="172" y="275" width="256" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eqS-EM-n0w"/>
+                                    <constraint firstAttribute="width" constant="256" id="m47-g0-iQy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pey-HI-r61" customClass="MKButton" customModule="SPADS_TimeRecordingIpad" customModuleProvider="target">
+                                <rect key="frame" x="257" y="351" width="86" height="80"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.47843137250000001" green="0.73333333329999995" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="AwS-UD-9ug"/>
+                                    <constraint firstAttribute="height" constant="80" id="faS-Iz-6NY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="L">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btLogin:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="iz3-ht-v9a"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="GS3-Ky-9JP">
+                                <rect key="frame" x="275" y="372" width="50" height="37"/>
+                                <animations/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="SpadsLogo" translatesAutoresizingMaskIntoConstraints="NO" id="V4k-4e-ckd">
+                                <rect key="frame" x="180" y="72" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="PYO-6o-DDs"/>
+                                    <constraint firstAttribute="width" constant="150" id="v3k-AM-Buh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IDg-D8-MeX" firstAttribute="top" secondItem="V4k-4e-ckd" secondAttribute="bottom" constant="50" id="41p-sz-FYT"/>
+                            <constraint firstAttribute="centerX" secondItem="IDg-D8-MeX" secondAttribute="centerX" id="9EQ-pL-xvQ"/>
+                            <constraint firstItem="V4k-4e-ckd" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="ABG-6S-AY0"/>
+                            <constraint firstAttribute="centerX" secondItem="bdQ-gt-Qy8" secondAttribute="centerX" id="AOg-VH-xaM"/>
+                            <constraint firstItem="pey-HI-r61" firstAttribute="centerY" secondItem="GS3-Ky-9JP" secondAttribute="centerY" id="Ecy-oa-ral"/>
+                            <constraint firstItem="bdQ-gt-Qy8" firstAttribute="top" secondItem="IDg-D8-MeX" secondAttribute="bottom" constant="20" id="GbZ-C3-GNG"/>
+                            <constraint firstAttribute="centerX" secondItem="GS3-Ky-9JP" secondAttribute="centerX" id="LpM-cl-uVP"/>
+                            <constraint firstAttribute="centerX" secondItem="V4k-4e-ckd" secondAttribute="centerX" id="We3-wD-IzY"/>
+                            <constraint firstAttribute="centerX" secondItem="pey-HI-r61" secondAttribute="centerX" id="gIg-gp-vP6"/>
+                            <constraint firstItem="pey-HI-r61" firstAttribute="top" secondItem="bdQ-gt-Qy8" secondAttribute="bottom" constant="20" id="j2w-Vr-Gjg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bm9-Vk-ghy"/>
+                    <connections>
+                        <outlet property="btLogin" destination="pey-HI-r61" id="ksV-dw-aJs"/>
+                        <outlet property="indicatorActivity" destination="GS3-Ky-9JP" id="hzo-n7-9cr"/>
+                        <outlet property="tfEmail" destination="IDg-D8-MeX" id="cSp-dx-Hw1"/>
+                        <outlet property="tfPassword" destination="bdQ-gt-Qy8" id="Obp-7v-Qqm"/>
+                        <segue destination="koG-9Y-NlR" kind="show" identifier="AdminLoginSegue" id="p7q-AT-vGY"/>
+                        <segue destination="vFN-vD-pTL" kind="show" identifier="ManagerLoginSegue" id="tfa-xd-9x5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562" y="360"/>
+        </scene>
+        <!--Admin View Controller-->
+        <scene sceneID="QJM-cU-ga3">
+            <objects>
+                <viewController id="koG-9Y-NlR" customClass="AdminViewController" customModule="SPADS_TimeRecordingIpad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dqb-Dp-apK"/>
+                        <viewControllerLayoutGuide type="bottom" id="AbH-BG-Cec"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hGI-xZ-w0y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="45h-Z7-VyQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2387" y="48"/>
+        </scene>
+        <!--Manager View Controller-->
+        <scene sceneID="78s-PD-mYm">
+            <objects>
+                <viewController id="vFN-vD-pTL" customClass="ManagerViewController" customModule="SPADS_TimeRecordingIpad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y5e-B9-wY0"/>
+                        <viewControllerLayoutGuide type="bottom" id="zsQ-Lg-NZ8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WQX-Ly-ni8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="70" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="iFg-b9-cJn">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmployeeCell" rowHeight="70" id="pOt-68-qNw" customClass="EmployeeTableViewCell" customModule="SPADS_TimeRecordingIpad" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="113.5" width="600" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pOt-68-qNw" id="LaC-s0-CA4">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bui Ngoc Bao" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4K-AN-OcK">
+                                                    <rect key="frame" x="17" y="11" width="137" height="26"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="18:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZv-Ac-Yd7">
+                                                    <rect key="frame" x="524" y="8" width="56" height="26"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="56" id="mac-9y-79e"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="09:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEU-c3-Fs6">
+                                                    <rect key="frame" x="460" y="8" width="56" height="26"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="56" id="W5R-ew-VS2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Employee" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEh-Wf-45B">
+                                                    <rect key="frame" x="192" y="8" width="98" height="26"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="sFx-2P-NTW"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="01/01/1993" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lg-C8-j8j">
+                                                    <rect key="frame" x="339" y="8" width="113" height="26"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="aEU-c3-Fs6" firstAttribute="leading" secondItem="6lg-C8-j8j" secondAttribute="trailing" constant="20" id="AiD-1J-Chp"/>
+                                                <constraint firstAttribute="bottom" secondItem="NZv-Ac-Yd7" secondAttribute="bottom" id="DuA-36-laM"/>
+                                                <constraint firstItem="NZv-Ac-Yd7" firstAttribute="top" secondItem="LaC-s0-CA4" secondAttribute="top" id="IW1-pZ-qJf"/>
+                                                <constraint firstItem="o4K-AN-OcK" firstAttribute="top" secondItem="LaC-s0-CA4" secondAttribute="top" id="Wgp-pg-XQD"/>
+                                                <constraint firstAttribute="bottom" secondItem="aEU-c3-Fs6" secondAttribute="bottom" id="aS3-jz-1Ff"/>
+                                                <constraint firstAttribute="bottom" secondItem="dEh-Wf-45B" secondAttribute="bottom" id="fq9-3m-vna"/>
+                                                <constraint firstItem="dEh-Wf-45B" firstAttribute="top" secondItem="LaC-s0-CA4" secondAttribute="top" id="mzm-Z5-39A"/>
+                                                <constraint firstItem="o4K-AN-OcK" firstAttribute="leading" secondItem="LaC-s0-CA4" secondAttribute="leading" constant="10" id="pNP-Ok-qM3"/>
+                                                <constraint firstAttribute="trailing" secondItem="NZv-Ac-Yd7" secondAttribute="trailing" constant="10" id="prn-68-GPX"/>
+                                                <constraint firstAttribute="bottom" secondItem="o4K-AN-OcK" secondAttribute="bottom" id="rxX-ar-c80"/>
+                                                <constraint firstItem="NZv-Ac-Yd7" firstAttribute="leading" secondItem="aEU-c3-Fs6" secondAttribute="trailing" constant="20" id="srz-ET-hmU"/>
+                                                <constraint firstItem="6lg-C8-j8j" firstAttribute="top" secondItem="LaC-s0-CA4" secondAttribute="top" id="tYd-SA-mJs"/>
+                                                <constraint firstItem="aEU-c3-Fs6" firstAttribute="top" secondItem="LaC-s0-CA4" secondAttribute="top" id="uzH-ge-UqV"/>
+                                                <constraint firstAttribute="bottom" secondItem="6lg-C8-j8j" secondAttribute="bottom" id="xoC-qo-Sir"/>
+                                                <constraint firstItem="6lg-C8-j8j" firstAttribute="leading" secondItem="dEh-Wf-45B" secondAttribute="trailing" constant="20" id="zfq-5f-jjP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <outlet property="lbDay" destination="6lg-C8-j8j" id="N61-vm-fps"/>
+                                            <outlet property="lbEmployee" destination="o4K-AN-OcK" id="YSs-bN-1Oa"/>
+                                            <outlet property="lbEndTime" destination="NZv-Ac-Yd7" id="pQI-kO-0KV"/>
+                                            <outlet property="lbGroup" destination="dEh-Wf-45B" id="dSa-je-n7c"/>
+                                            <outlet property="lbStartTime" destination="aEU-c3-Fs6" id="cfT-X3-KqE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iFg-b9-cJn" secondAttribute="trailing" id="ApT-tl-Arb"/>
+                            <constraint firstItem="iFg-b9-cJn" firstAttribute="top" secondItem="WQX-Ly-ni8" secondAttribute="top" id="Mds-6p-ECk"/>
+                            <constraint firstItem="zsQ-Lg-NZ8" firstAttribute="top" secondItem="iFg-b9-cJn" secondAttribute="bottom" id="PSa-cH-ufJ"/>
+                            <constraint firstItem="iFg-b9-cJn" firstAttribute="leading" secondItem="WQX-Ly-ni8" secondAttribute="leading" id="r49-cE-eOP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="employeeTableView" destination="iFg-b9-cJn" id="5Mr-bU-ZRH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Y5-od-d45" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2387" y="806"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="M4c-t0-9np" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="tJd-4x-eLC" kind="relationship" relationship="viewControllers" id="ET5-jE-d1g"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="VnC-KV-hfk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M4c-t0-9np" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Login" image="second" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eqV-FZ-Vdq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="6qn-JU-n7D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHM-DB-GeQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SpadsLogo" width="300" height="300"/>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
